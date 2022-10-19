@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://dashboard.netlify.com">Click aqui para ver o Dashboard</a>
+  <a href="https://dashboardv1.netlify.app/">Click aqui para ver o Dashboard</a>
 </div>
 
 <h1 align="center">Dashboard</h1>
