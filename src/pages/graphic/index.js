@@ -18,7 +18,7 @@ function Graphic({ allItems }) {
       {
         label: "",
         data: deliveryNormalize,
-        cutout: windowWidth > 425 ? 120  : 100,
+        cutout: windowWidth > 769 ? 150 : 120,
         backgroundColor: [
           "#4f46e5",
           "#3b82f6",
@@ -61,30 +61,30 @@ function Graphic({ allItems }) {
 
   return (
     <>
-      <div className="w-full xl:w-9/12 mb-12 xl:mb-0 px-4 mx-auto mt-[5rem] grid grid-cols-2 grid-rows-2 gap-y-[2rem]">
+      <div className="w-full px-[2rem] xl:p-0 xl:w-9/12 mb-12 xl:mb-0 mx-auto mt-[5rem] grid sm:grid-cols-2 grid-cols-1 grid-rows-4 sm:grid-rows-2 gap-y-[2rem]">
         <div className="sm:w-[90%] lg:w-[98%] shadow-lg px-4 w-full bg-white flex items-center justify-around flex-col">
-          <div>  
+          <div className="w-full">  
             <h2 className="pl-[2rem] w-[100%] font-[700] text-[#1e293b] text-[6rem] text-left">Barra</h2>
             <p className="pl-[2rem] w-[100%] font-[400] text-[#1e293b] text-[2rem] text-left">Quantidade de entregas por equipe</p>
           </div>
           <BarChart chartData={data} />
         </div>
         <div className="sm:w-[90%] lg:w-[98%] shadow-lg px-4 py-6 w-full bg-white flex items-center justify-around flex-col justify-self-end">
-          <div>
+          <div className="w-full">
             <h2 className="pl-[2rem] w-[100%] font-[700] text-[#1e293b] text-[6rem] text-left">Linha</h2>
             <p className="pl-[2rem] w-[100%] font-[400] text-[#1e293b] text-[2rem] text-left">Quantidade de entregas por equipe</p>
           </div>
           <LineChart chartData={dataLine} />
         </div>
         <div className="sm:w-[90%] lg:w-[98%] shadow-lg px-4 py-6 w-full bg-white flex items-center justify-around flex-col">
-          <div>
+          <div className="w-full">
             <h2 className="pl-[2rem] w-[100%] font-[700] text-[#1e293b] text-[6rem] text-left">Rosca</h2>
             <p className="pl-[2rem] w-[100%] font-[400] text-[#1e293b] text-[2rem] text-left">Quantidade de entregas por equipe</p>
           </div>
           <DoughnutChart chartData={data} />
         </div>
         <div className="sm:w-[90%] lg:w-[98%] shadow-lg px-4 py-6 w-full bg-white flex items-center justify-around flex-col justify-self-end">
-          <div>
+          <div className="w-full">
             <h2 className="pl-[2rem] w-[100%] font-[700] text-[#1e293b] text-[6rem] text-left">Polar</h2>
             <p className="pl-[2rem] w-[100%] font-[400] text-[#1e293b] text-[2rem] text-left">Quantidade de entregas por equipe</p>
           </div>

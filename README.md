@@ -1,11 +1,9 @@
 ## A fazer:
-- [ ]  Responsivo
 - [ ]  Testes
   - [ ]  Integração
   - [ ]  Renderização da tabela
   - [ ]  Renderização dos gráficos
   - [ ]  Funcionamento dos botões de paginação
-- [ ]  Paginação adicionar: página atual e total de páginas
 - [ ]  Storybook (documentação do front end)
 - [ ]  Clean code
 - [ ]  Solid
@@ -22,6 +20,8 @@
 - [x]  Componente de tabela
 - [x]  Gráficos
 - [x]  Paginação com 20 linhas por página
+- [x]  Responsivo
+- [x]  Paginação adicionar: página atual e total de páginas
 
 ## Tecnologias:
 - [x]  Tailwind

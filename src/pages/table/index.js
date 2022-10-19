@@ -39,12 +39,12 @@ function Table() {
         </div>
       :
       <>
-        <div className="w-full xl:w-9/12 mb-12 xl:mb-0 px-4 mx-auto mt-[10rem]">
-          <h2 className="font-[700] text-[#1e293b] text-[6rem] leading-[5.5rem]">Insights <br /><span className="text-[#136eff] text-[4rem]">do poder de entrega por equipe.</span></h2>
+        <div className="w-full px-[2rem] xl:p-0 xl:w-9/12 mb-12 xl:mb-0 mx-auto mt-[10rem]">
+            <h2 className="font-[700] text-[#1e293b] text-[5rem] sm:text-[6rem] leading-[4rem] sm:leading-[5.5rem]">Insights <br /><span className="text-[#136eff] text-[2.5rem] sm:text-[4rem]">do poder de entrega por equipe.</span></h2>
         </div>
         {!loading && <Graphic allItems={allItems}/>}
         <section className="py-1 bg-blueGray-50 rounded-[.25rem]">
-          <div className="w-full xl:w-9/12 mb-12 xl:mb-0 px-4 mx-auto mt-[2rem]">
+            <div className="w-full px-[2rem] xl:p-0 xl:w-9/12 mb-12 xl:mb-0 mx-auto mt-[2rem]">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">
               <div className="block w-full overflow-x-auto">
                 <table className="items-center bg-transparent w-full border-collapse">
@@ -97,7 +97,7 @@ function Table() {
                   </tbody>
                 </table>
               </div>
-              <ol className="flex justify-end gap-3 text-xs font-medium m-[1.5rem] border-t-[.0625rem] pt-[1.5rem] border-slate-200">
+              <ol className="flex justify-end gap-4 text-xs font-medium border-t-[.0625rem] py-[1.5rem] px-[1rem] border-slate-200">
                 {allItems.previousPage &&
                   <li>
                     <button
@@ -120,12 +120,17 @@ function Table() {
                     </button>
                   </li>
                 }
-                  
+                <li>
+                  <span className="text-[1.2rem] inline-flex h-10 w-20 items-center justify-center rounded border border-gray-200 px-[.5rem]"
+                  >
+                    {`${allItems.pageNumber} de ${allItems.totalPages}`}
+                  </span>
+                </li>
                 {allItems.nextPage &&
                   <li>
                     <button
                       onClick={() => setPagination(allItems.nextPage)}
-                      className="inline-flex h-10 w-10 items-center justify-center rounded border border-gray-200 mr-[1rem]"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded border border-gray-200"
                     >
                       <span className="sr-only">Next Page</span>
                       <svg
