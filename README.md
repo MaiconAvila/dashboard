@@ -10,14 +10,10 @@
 
 <p align="center">
   <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/1fc860ea-9f71-4e77-a336-025271861e12/deploy-status">
-</p>
-<p align="center">
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/MaiconAvila/dashboard?color=56BEB8">
 </p>
 <p align="center">
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/MaiconAvila/dashboard?color=56BEB8">
-</p>
-<p align="center">
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/MaiconAvila/dashboard?color=56BEB8">
 </p>
 
