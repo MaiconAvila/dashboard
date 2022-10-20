@@ -42,7 +42,7 @@ function Table() {
         <div className="w-full px-[2rem] xl:p-0 xl:w-9/12 mb-12 xl:mb-0 mx-auto mt-[10rem]">
             <h2 className="font-[700] text-[#1e293b] text-[5rem] sm:text-[6rem] leading-[4rem] sm:leading-[5.5rem]">Insights <br /><span className="text-[#136eff] text-[2.5rem] sm:text-[4rem]">do poder de entrega por equipe.</span></h2>
         </div>
-        {!loading && <Graphic allItems={allItems}/>}
+        {!loading && <Graphic/>}
         <section className="py-1 bg-blueGray-50 rounded-[.25rem]">
             <div className="w-full px-[2rem] xl:p-0 xl:w-9/12 mb-12 xl:mb-0 mx-auto mt-[2rem]">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">

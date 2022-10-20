@@ -1,14 +1,32 @@
+import { useEffect, useState } from "react";
 import BarChart from "components/barChart";
 import LineChart from "components/lineChart";
 import DoughnutChart from "components/doughnutChart";
 import PolarChart from "components/polarChart";
 
-function Graphic({ allItems }) {
+function Graphic() {
+  const [allItems, setAllItems] = useState([]);
 
-  const allOmega = allItems?.data?.filter((data) => data.nameTeam === 'Omega');
-  const allAlpha = allItems?.data?.filter((data) => data.nameTeam === 'Alpha');
-  const allBeta = allItems?.data?.filter((data) => data.nameTeam === 'Beta');
+  useEffect(() => {
+    (async () => {
+      let resultOrder = await fetch("https://dashboardv1.azurewebsites.net/api/orders/DataGraphic", {
+        method: 'GET'
+      })
+        .then
+        ((res) => {
+          if (res.ok) {
+            return res.json();
+          }
+        })
+        .catch((err) => console.error(err));
+      console.log("resultOrder", resultOrder);
+      setAllItems(resultOrder)
+    })();
+  }, []) // eslint-disable-line
 
+  const allOmega = allItems[0];
+  const allAlpha = allItems[1];
+  const allBeta = allItems[2];
   const deliveryNormalize = [allOmega?.length, allAlpha?.length, allBeta?.length];
   const windowWidth = window.innerWidth;
 
