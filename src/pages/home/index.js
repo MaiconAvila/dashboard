@@ -1,8 +1,9 @@
 import { useState, useEffect, useContext } from 'react';
 import { DemandContext } from "utils/context/demand";
 import Loading from 'assets/loading.svg';
-import Graphic from 'pages/graphic';
+import Chart from 'pages/chart';
 import Table from 'components/table';
+import { getPaginatedData } from "utils/services/homeSVC";
 
 function Home() {
   const { setOrder, pagination, setAllItems } = useContext(DemandContext);
@@ -11,9 +12,9 @@ function Home() {
   useEffect(() => {
     setLoading(true);
     (async () => {
-      let resultOrder = await fetch(pagination, {
-        method: 'GET'
-      })
+      let resultOrder = await getPaginatedData(
+        pagination, 'GET'
+      )
       .then
       ((res) => {
         if(res.ok){
@@ -48,7 +49,7 @@ function Home() {
       :
         <>
           {titleComponent()}
-          <Graphic/>
+          <Chart/>
           <Table/>
         </>
       }
