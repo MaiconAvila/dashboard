@@ -21,8 +21,6 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "build:css": "postcss src/tailwind.css -o src/index.css",
-    "watch:css": "postcss src/tailwind.css -o src/index.css",
     "start": "yarn run watch:css & react-scripts start",
     "build": "yarn run build:css react-scripts build",
     "test": "react-scripts test",
