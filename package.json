@@ -8,8 +8,6 @@
     "@testing-library/user-event": "^13.2.1",
     "chart.js": "^3.9.1",
     "dotenv": "^16.0.3",
-    "flowbite": "^1.5.3",
-    "flowbite-datepicker": "^1.2.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.3.1",
     "react-datepicker": "^4.8.0",
@@ -25,7 +23,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +47,6 @@
     "canvas": "^2.10.1",
     "jest-canvas-mock": "^2.4.0",
     "postcss": "^8.4.18",
-    "postcss-import": "^15.0.0",
     "react-test-renderer": "^18.2.0",
     "tailwindcss": "^3.1.8"
   }
