@@ -48,7 +48,7 @@ const Table = () => {
                 </thead>
 
                 <tbody>
-                  {order && order.map((item, index) =>
+                  {order.length > 0 && order.map((item, index) =>
                     <tr className="hover:bg-[#eff5ff] border-t-[.0625rem] border-slate-200" key={index}>
                       <th className="font-[700] border-t-0 px-6 align-middle border-l-0 border-r-0 text-[1.2rem] whitespace-nowrap p-4 text-left text-blueGray-700">
                         {item.id}

@@ -239,7 +239,7 @@ function Form() {
               defaultValue={'default'}
               >
               <option value='default' selected>Selecione os produtos</option>
-              {products.map((product, index) => (
+              {products.length > 0 && products.map((product, index) => (
                 <option value={product.id} key={index}>
                   {product.name}
                 </option>
@@ -276,7 +276,7 @@ function Form() {
               defaultValue={'default'}
             >
               <option value='default' selected>Selecione a equipe</option>
-              {teams.map((team, index) => (
+              {teams.length > 0 && teams.map((team, index) => (
                 <option value={team.id} key={index}>
                   {team.name}
                 </option>
@@ -291,7 +291,7 @@ function Form() {
               Produtos selecionados:
             </p>
             <ul className="bg-white rounded-lg border border-gray-300 w-full min-h-[4rem] text-gray-700">
-              {productsList.map((product, index) => (
+              {productsList > 0 && productsList.map((product, index) => (
                 <li key={index} className="px-6 py-2 last:border-0 border-b border-gray-300 w-full first:rounded-t-lg last:rounded-b-lg">
                   {product.name}
                 </li>
