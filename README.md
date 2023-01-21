@@ -76,7 +76,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [ ]  Tela de login e cadastro
 - [ ]  Telas de erro
 - [ ]  Tela do item da tabela com os dados
-- [ ]  Tela de Adição de demanda
+- [x]  Tela de Adição de demanda
 - [ ]  Tela só para a tabela
 - [ ]  Tela só para os gráficos
 
