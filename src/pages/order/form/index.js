@@ -217,7 +217,7 @@ function Form() {
           </label>
           <input
             type="text"
-            className="form-control block w-full !h-[4rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full !h-[4rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none cursor-not-allowed"
             placeholder="Data de criação"
             value={new Date(order.createAt).toLocaleDateString("pt-BR")}
             disabled
