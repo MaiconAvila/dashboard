@@ -237,18 +237,18 @@ function Form() {
             }
             minDate={new Date()}
             placeholderText={"DD/MM/AAAA"}
-            className="block w-full h-[4rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="block w-full h-[8rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
             dateFormat="dd/MM/yyyy"
             selected={
               typeof deliveryDate === "string"
                 ? new Date(deliveryDate)
                 : deliveryDate
-              }
+            }
             locale="pt-BR"
             onChange={(ev) => setDeliveryDate(ev)}
-            showMonthDropdown
-            showYearDropdown
-            dropdownMode="select"
+            // showMonthDropdown
+            // showYearDropdown
+            // dropdownMode="select"
           />
         </div>
 
