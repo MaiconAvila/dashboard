@@ -4,6 +4,7 @@ import { postOrderData } from "utils/services/orderSVC";
 import Loading from 'assets/loading.svg';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import MaskedInput from "react-maskedinput"
 
 function Form() {
   const date = new Date();
@@ -231,6 +232,9 @@ function Form() {
             Selecione a data de entrega:
           </label>
           <DatePicker
+            customInput={
+              <MaskedInput mask="11/11/1111" placeholder="mm/dd/yyyy" />
+            }
             selected={deliveryDate}
             onChange={(ev) => setDeliveryDate(ev)}
             locale="pt-BR"
@@ -239,7 +243,7 @@ function Form() {
             showYearDropdown
             dropdownMode="select"
             dateFormat="dd/MM/yyyy"
-            className="block w-full h-[4rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="block w-full h-[4rem] px-3 py-1.5 text-2xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           />
         </div>
 
