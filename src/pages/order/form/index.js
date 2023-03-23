@@ -235,15 +235,20 @@ function Form() {
             customInput={
               <MaskedInput mask="11/11/1111" placeholder="mm/dd/yyyy" />
             }
-            selected={deliveryDate}
-            onChange={(ev) => setDeliveryDate(ev)}
-            locale="pt-BR"
             minDate={new Date()}
+            placeholderText={"DD/MM/AAAA"}
+            className="block w-full h-[4rem] px-3 py-1.5 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            dateFormat="dd/MM/yyyy"
+            selected={
+              typeof deliveryDate === "string"
+                ? new Date(deliveryDate)
+                : deliveryDate
+              }
+            locale="pt-BR"
+            onChange={(ev) => setDeliveryDate(ev)}
             showMonthDropdown
             showYearDropdown
             dropdownMode="select"
-            dateFormat="dd/MM/yyyy"
-            className="block w-full h-[4rem] px-3 py-1.5 text-2xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           />
         </div>
 
